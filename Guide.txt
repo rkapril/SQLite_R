@@ -2,7 +2,7 @@ CMD
 cd C:\...\sqlite
 
 # Check number of rows on your csv file
-find /c /v "" CW1_credit_data.csv
+find /c /v "" credit_data.csv
 
 # Create Database
 sqlite3 loan.db
@@ -11,7 +11,7 @@ sqlite3 loan.db
 .mode csv records
 
 # Import the csv file
-.import CW1_credit_data.csv records
+.import credit_data.csv records
 
 # Show tables
 .tables
@@ -36,5 +36,5 @@ WHERE name = 'records';
 # Alternative
 .open test.db
 .mode csv
-.import CW1_credit_data.csv records
+.import credit_data.csv records
 
