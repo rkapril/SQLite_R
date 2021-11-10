@@ -1,5 +1,5 @@
 CMD
-cd C:\Users\User\OneDrive\Desktop\sqlite
+cd C:\...\sqlite
 
 # Check number of rows on your csv file
 find /c /v "" CW1_credit_data.csv
