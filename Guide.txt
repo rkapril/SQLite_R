@@ -1,0 +1,40 @@
+CMD
+cd C:\Users\User\OneDrive\Desktop\sqlite
+
+# Check number of rows on your csv file
+find /c /v "" CW1_credit_data.csv
+
+# Create Database
+sqlite3 loan.db
+
+# Create Table name records
+.mode csv records
+
+# Import the csv file
+.import CW1_credit_data.csv records
+
+# Show tables
+.tables
+
+# Show Schema
+.schema records
+
+# Show table information
+.header on
+.mode column
+pragma table_info('records');
+
+# SQL Queries
+SELECT * FROM records LIMIT 5;
+
+SELECT sql FROM sqlite_master
+WHERE name = 'records';
+
+# Exit
+.quit
+
+# Alternative
+.open test.db
+.mode csv
+.import CW1_credit_data.csv records
+
