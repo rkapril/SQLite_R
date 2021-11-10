@@ -7,6 +7,8 @@ setwd("C:\\..\\sqlite")
 
 getwd()
 
+mydb <- dbConnect(RSQLite::SQLite(), "test.db")
+
 con <- dbConnect(RSQLite::SQLite(), "loan.db")
 
 df <- tbl(con, "records")
