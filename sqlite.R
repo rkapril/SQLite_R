@@ -12,3 +12,5 @@ con <- dbConnect(RSQLite::SQLite(), "loan.db")
 df <- tbl(con, "records")
 
 df <- data.frame(df)
+
+df <- dbGetQuery(con, "SELECT * FROM records")
