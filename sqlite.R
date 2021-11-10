@@ -3,7 +3,7 @@ library(dplyr)
 
 getwd()
 
-setwd("C:\\Users\\User\\OneDrive\\Desktop\\sqlite")
+setwd("C:\\..\\sqlite")
 
 getwd()
 
