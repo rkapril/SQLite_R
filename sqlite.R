@@ -14,5 +14,6 @@ df <- tbl(con, "records")
 df <- data.frame(df)
 
 dbGetQuery(con, "SELECT * FROM records")
-dbSendQuery(con, "CREATE DATABASE test")
+
 dbWriteTable(con, "test", df)
+dbGetQuery(con, "SELECT * FROM test")
